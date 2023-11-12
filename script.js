@@ -141,10 +141,10 @@ window.onload = function () {
     }
   }
 
-  let maxl = 300,
+  let maxl = 250,
     minl = 50,
-    n = 30,
-    numt = 250,
+    n = 25,
+    numt = 200,
     tent = [],
     clicked = true,
     target = { x: 0, y: 0 },
