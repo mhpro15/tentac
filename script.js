@@ -120,12 +120,7 @@ window.onload = function () {
         for (let i = 0; i < this.n; i++) {
           this.segments[i].show();
         }
-        c.strokeStyle =
-          "hsl(" +
-          (this.rand * 0 + 180) +
-          ",100%," +
-          (this.rand * 30 + 25) +
-          "%)";
+        c.strokeStyle = "#D0D4CA";
         c.lineWidth = this.rand * 2;
         c.lineCap = "round";
         c.lineJoin = "round";
@@ -137,10 +132,10 @@ window.onload = function () {
       c.beginPath();
       if (dist(this.x, this.y, target.x, target.y) <= this.l) {
         c.arc(this.x, this.y, 2 * this.rand + 1, 0, 2 * Math.PI);
-        c.fillStyle = "violet";
+        c.fillStyle = "#FCF5ED";
       } else {
         c.arc(this.x, this.y, this.rand * 2, 0, 2 * Math.PI);
-        c.fillStyle = "violet";
+        c.fillStyle = "#AEDEFC";
       }
       c.fill();
     }
@@ -198,7 +193,7 @@ window.onload = function () {
       0,
       2 * Math.PI
     );
-    c.fillStyle = "rgba(90,60,30,1)";
+    c.fillStyle = "#F1B4BB";
     c.fill();
 
     for (i = 0; i < numt; i++) {
